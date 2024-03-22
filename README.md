@@ -41,8 +41,11 @@ The application is structured into several key modules:
 
 4. *Running the Application:*
 - Execute mvn spring-boot:run to start the application.
+- The application will be accessible on localhost:8080.
+
 
 ### Sample API response On Postman
+
 **POST:** `http://localhost:8080/api/accounts`
 
 - **Request Body**
@@ -61,6 +64,68 @@ The application is structured into several key modules:
     "balance": 10000.0
    }
 
+
+**GET:** `http://localhost:8080/api/accounts/4`
+
+- **Response:**
+
+  ```json
+  {
+    "id": 4,
+    "accountHolderName": "Hijaab",
+    "balance": 20000.0
+  }
+
+**PUT:** `http://localhost:8080/api/accounts/4/deposit`
+
+- **Request Body**
+
+  ```json
+  {
+    "amount" : 10000
+  }
+
+- **Response:**
+    ```json
+    {
+    "id": 4,
+    "accountHolderName": "Hijaab",
+    "balance": 30000.0
+    }
+
+**GET:** `http://localhost:8080/api/accounts`
+
+- **Response:**
+    ```json
+    [
+    {
+        "id": 3,
+        "accountHolderName": "Mustafa",
+        "balance": 20000.0
+    },
+    {
+        "id": 4,
+        "accountHolderName": "Hijaab",
+        "balance": 30000.0
+    },
+    {
+        "id": 5,
+        "accountHolderName": "Tauheed",
+        "balance": 10000.0
+    },
+    {
+        "id": 6,
+        "accountHolderName": "Tauheed",
+        "balance": 10000.0
+    }
+  ]
+
+**DEL:** `http://localhost:8080/api/accounts/5`
+
+- **Response:**
+    Account is deleted successfully!
+
+    
   
 
 ### Features
