@@ -49,8 +49,8 @@ The application is structured into several key modules:
 
   ```json
   {
-    "Mobile": "85022457580",
-    "password": "pass@12"
+    "accountHolderName": "Tauheed",
+    "balance": 10000
   }
 
 - **Response:**
