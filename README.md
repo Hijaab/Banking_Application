@@ -54,6 +54,7 @@ The application is structured into several key modules:
   }
 
 - **Response:**
+    ```json
 {
     "id": 6,
     "accountHolderName": "Tauheed",
