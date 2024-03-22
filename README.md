@@ -43,14 +43,17 @@ The application is structured into several key modules:
 - Execute mvn spring-boot:run to start the application.
 
 ### Sample API response On Postman
-1- POST:http://localhost:8080/api/accounts
-#Request Body:
+**POST:** `http://localhost:8080/api/accounts`
+
+- **Request Body**
+
+  ```json
   {
-    "accountHolderName": "Tauheed",
-    "balance": 10000
+    "Mobile": "85022457580",
+    "password": "pass@12"
   }
 
-#Response:
+- **Response:**
 {
     "id": 6,
     "accountHolderName": "Tauheed",
