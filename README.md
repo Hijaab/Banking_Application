@@ -41,7 +41,22 @@ The application is structured into several key modules:
 
 4. *Running the Application:*
 - Execute mvn spring-boot:run to start the application.
-- The application will be accessible on localhost:8080.
+
+### Sample API response On Postman
+1- POST:http://localhost:8080/api/accounts
+   Request Body:
+  {
+    "accountHolderName": "Tauheed",
+    "balance": 10000
+  }
+
+  Response:
+{
+    "id": 6,
+    "accountHolderName": "Tauheed",
+    "balance": 10000.0
+}
+  
 
 ### Features
 
