@@ -44,13 +44,13 @@ The application is structured into several key modules:
 
 ### Sample API response On Postman
 1- POST:http://localhost:8080/api/accounts
-*Request Body:*
+#Request Body:
   {
     "accountHolderName": "Tauheed",
     "balance": 10000
   }
 
-*Response:*
+#Response:
 {
     "id": 6,
     "accountHolderName": "Tauheed",
